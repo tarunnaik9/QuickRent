@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickRent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>QuickRent</h1>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gadgets">Gadgets</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <button class="signup-btn" id="signupBtn">Sign Up</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Rent Your Favorite Gadgets</h1>
+      <p>Affordable, reliable, and hassle-free rentals for everyone.</p>
+      <button class="cta-btn">Explore Rentals</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features-list">
+      <div class="feature-item">
+        <h3>Wide Variety of Gadgets</h3>
+        <p>From laptops to cameras, we have it all.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Affordable Pricing</h3>
+        <p>Enjoy rentals at pocket-friendly prices.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Quick Delivery</h3>
+        <p>Fast and reliable doorstep delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gadgets Section -->
+  <section class="gadgets" id="gadgets">
+    <h2>Available Gadgets</h2>
+    <div class="gadgets-list">
+      <div class="gadget-item">
+        <img src="assets/laptop.jpg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>$20/day</p>
+        <button class="rent-btn">Rent Now</button>
+      </div>
+      <div class="gadget-item">
+        <img src="assets/camera.jpg" alt="Camera">
+        <h3>Camera</h3>
+        <p>$15/day</p>
+        <button class="rent-btn" id="cameraRentBtn">Rent Now</button>
+      </div>
+      <div class="gadget-item">
+        <img src="assets/console.jpg" alt="Gaming Console">
+        <h3>Gaming Console</h3>
+        <p>$10/day</p>
+        <button class="rent-btn">Rent Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Modals -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeSignupModal">&times;</span>
+      <div id="formContainer">
+        <h2>Create an Account</h2>
+        <form id="signup-form">
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+        <hr>
+        <form id="signin-form" style="display: none;">
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Sign In</button>
+        </form>
+        <button id="toggleFormBtn">Already have an account? Sign In</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
